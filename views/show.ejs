@@ -1,0 +1,40 @@
+<%- include("partials/header") %>
+
+<div class="container">
+
+    <h3 id="blue" class="mt-md-4 mt-3"><%= monument.name %></h3>
+
+    <div class="row special justify-content-around align-items-center">
+        <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0 something">
+            <img class="img-fluid" id="picture" src="<%= monument.image %>" >
+        </div>
+        <div id="awesome" class="col-12 col-md-5 col-lg-6 great p-5 p-sm-3 p-md-3 p-lg-4 my-sm-4 mb-4 mt-3">
+            <h4>Salient Features:</h4>
+            <p><%- monument.desc1 %></p>
+        </div>
+    </div>
+
+    <div id="description" class="row">
+        <div class="col-12 mt-md-2 mb-md-3 my-sm-1 mt-2 mb-2">
+            <h3>Description:</h3>
+            <p><%- monument.desc2 %></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="d-flex justify-content-end mr-0 my-3">
+            <a class="btn btn-success " href="/monuments/<%= monument._id %>/images/new">Add New Image</a>
+        </div>
+        <div class="row">
+            <% monument.images.forEach(function(picture){ %>
+                <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                    <img class="munna-circuit img-thumbnail" src="<%= picture.img %>">
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

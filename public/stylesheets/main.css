@@ -1,0 +1,112 @@
+
+/* New Page */
+#special {
+    width: 60%;
+    margin: 30px auto;
+}
+
+#special button {
+    width: 30%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+label strong {
+    font-size: 30px;
+    font-family: "Libre Baskerville";
+}
+
+.container h2 {
+    font-family: "Libre Baskerville";
+    text-shadow: 2px 2px 0px blue,
+                 3px 3px 0px green,
+                 5px 4px 10px black;
+
+    color: rgb(255, 254, 254);
+    font-size: 40px;
+}
+
+/* Show Page */
+
+#blue {
+    font-family: "Libre Baskerville";
+    color: darkslateblue;
+    text-shadow: 2px 2px 0 #fff;
+    font-size: 40px;
+    text-decoration: darkslateblue wavy underline;
+
+
+}
+
+#description h3 {
+    text-decoration: underline;
+    color: #2d545e;
+    font-family: serif;
+    font-size: 40px;
+}
+
+#description p {
+    font-family: cursive;
+}
+
+hr {
+    height: 20px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(3, 91, 97, 0.801);
+}
+
+.col-md-4 {
+    padding: 0;
+    height: 270px;
+}
+
+.col-md-6 .something {
+    padding: 0;
+}
+
+#awesome {
+    color: white;
+    box-shadow: 0 0 8px 8px white inset;
+    padding: 20px 40px;
+}
+
+
+#picture {
+    width: 95%;
+    height: 90%;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    border-radius: 25% 10%;
+}
+
+.special {
+    height: 450px;    
+}
+
+.munna-circuit {
+    width: 95%;
+    height: 90%;
+    border-radius: 10px 100px / 40px;
+}
+
+.container .munna-circuit:hover {
+    z-index: 1;
+    transform: scale(1.1);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.btn .btn-success {
+    display: block;
+}
+
+@media all and (max-width: 767px) and (min-width: 100px) {
+    #description {
+        margin-top:250px;
+      }
+
+    label strong{
+        font-size: 25px;
+    }
+  }
